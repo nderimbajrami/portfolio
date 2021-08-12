@@ -5,6 +5,7 @@
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255,255,255,0);
+  --primary-black: #000;
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
 }
@@ -12,6 +13,10 @@
 body{
   font-family: 'Roboto Condensed', sans-serif;
   overflow: hidden;
+}
+
+.bg-orange{
+  background-color: var(--primary-orange);
 }
 
 /* NAVBAR */
@@ -50,7 +55,7 @@ nav ul li {
 .navbar-nav > li > a{
   margin-right: 0.75rem;
   margin-left: 0.75rem;
-  color: var(--primary-white) !important;
+  color: var(--primary-black) !important;
   border-top: .1875rem solid var(--primary-dark);
 }
 
@@ -62,7 +67,8 @@ nav ul li {
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a:focus, .navbar-nav > li > a:hover{
-  border-top: 0.1875rem solid var(--primary-orange);
+  transition: .5s ease-in-out;
+  border-top: 0.1875rem solid var(--primary-black);
 }
 
 
